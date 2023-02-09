@@ -1,0 +1,9 @@
+main:
+  - title: "Publications"
+    url: /publications/
+  - title: "Blog"
+    url: /blog/
+  # - title: "Tags"
+  #   url: /tags/
+  - title: "About"
+    url: /about/
