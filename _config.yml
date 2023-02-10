@@ -5,13 +5,13 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-# Theme Settings
+# Theme Settings   
 #
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 theme                  : "minimal-mistakes-jekyll"
-remote_theme           : "mmistakes/minimal-mistakes"
+# remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -24,7 +24,7 @@ description              : "An amazing website."
 url                      : "https://longhoangphi225.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : /assets/images/1.jpg
+teaser                   : /assets/images/1.png
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -145,29 +145,26 @@ author:
     - label: "Google scholar"
       icon: "ai ai-google-scholar ai-1x"  # -square
       url: "https://scholar.google.com/citations?user=3Dfc1z8AAAAJ&hl=en&authuser=1"
+    - label: "Research gate"
+      # icon: "ai ai-google-scholar ai-1x"  # -square
+      url: "https://scholar.google.com/citations?user=3Dfc1z8AAAAJ&hl=en&authuser=1"
 
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://www.linkedin.com/in/longhoangphi225/"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin-in"
+      url: "https://www.linkedin.com/in/longhoangphi225/"
+    - label: "Google scholar"
+      icon: "ai ai-google-scholar ai-1x"  # -square
+      url: "https://scholar.google.com/citations?user=3Dfc1z8AAAAJ&hl=en&authuser=1"
+    - label: "Research gate"
+      # icon: "ai ai-google-scholar ai-1x"  # -square
+      url: "https://scholar.google.com/citations?user=3Dfc1z8AAAAJ&hl=en&authuser=1"
 
 
 # Reading Files
