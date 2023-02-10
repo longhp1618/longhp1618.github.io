@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Long Phi Hoang"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "Long Phi Hoang"
 description              : "An amazing website."
 url                      : "https://longhoangphi225.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -146,8 +146,8 @@ author:
       icon: "ai ai-google-scholar ai-1x"  # -square
       url: "https://scholar.google.com/citations?user=3Dfc1z8AAAAJ&hl=en&authuser=1"
     - label: "Research gate"
-      # icon: "ai ai-google-scholar ai-1x"  # -square
-      url: "https://scholar.google.com/citations?user=3Dfc1z8AAAAJ&hl=en&authuser=1"
+      icon: "ai ai-google-scholar ai-1x"  # -square
+      url: "https://www.researchgate.net/profile/Long-Hoang-47?ev=hdr_xprf"
 
 
 # Site Footer
@@ -163,8 +163,8 @@ footer:
       icon: "ai ai-google-scholar ai-1x"  # -square
       url: "https://scholar.google.com/citations?user=3Dfc1z8AAAAJ&hl=en&authuser=1"
     - label: "Research gate"
-      # icon: "ai ai-google-scholar ai-1x"  # -square
-      url: "https://scholar.google.com/citations?user=3Dfc1z8AAAAJ&hl=en&authuser=1"
+      icon: "ai ai-google-scholar ai-1x"  # -square
+      url: "https://www.researchgate.net/profile/Long-Hoang-47?ev=hdr_xprf"
 
 
 # Reading Files
