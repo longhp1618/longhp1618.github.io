@@ -32,6 +32,6 @@ header:
 <!-- --- -->
 
 <a href="https://link.springer.com/chapter/10.1007/978-981-19-3394-3_29" style="font-size:18px; text-decoration:none">Multi Deep Learning Model for Building Footprint Extraction from High Resolution Remote Sensing Image</a><br>
-<span style="font-size:17px;"> <b> Long P. Hoang </b>, Dung D. Le, Tuan A. Tran, Thang N. Tran </span><br>
+Anh T. Ho, Tuan A. Tran, <span style="font-size:17px;"> <b> Long P. Hoang </b>, Ha H. Le, Thang N. Tran </span><br>
 <span style="font-size:18px;"> _In Intelligent Systems and Networks, ICISN, 2022_.</span><br>
 <!-- --- -->
