@@ -16,15 +16,15 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Long Phi Hoang"
+title                    : "Long P. Hoang"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Long Phi Hoang"
+name                     : "Long P. Hoang"
 description              : "An amazing website."
 url                      : "https://longhoangphi225.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : /assets/images/1.png
+teaser                   : /assets/images/1.jpeg
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -131,9 +131,9 @@ analytics:
 #       # url: "https://instagram.com/"
 
 author:
-  name   : "Long Phi Hoang"
+  name   : "Long P. Hoang"
   avatar : "/assets/images/2.jpeg"
-  bio    : "Research Assisitant @ VinUniversity"
+  bio    : "PhD student @ SUTD"
   location         : "Hanoi, Vietnam"
   links:
     - label: "GitHub"
