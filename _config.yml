@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Long P. Hoang"
 description              : "An amazing website."
-url                      : "https://longhoangphi225.github.io"
+url                      : "https://longhp1618.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : /assets/images/1.jpeg
@@ -138,10 +138,10 @@ author:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://www.linkedin.com/in/longhoangphi225/"
+      url: "https://github.com/longhp1618"
     - label: "LinkedIn"
       icon: "fab fa-linkedin-in"
-      url: "https://www.linkedin.com/in/longhoangphi225/"
+      url: "https://www.linkedin.com/in/longhp1618/"
     - label: "Google scholar"
       icon: "ai ai-google-scholar ai-1x"  # -square
       url: "https://scholar.google.com/citations?user=3Dfc1z8AAAAJ&hl=en&authuser=1"
@@ -155,10 +155,10 @@ footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://www.linkedin.com/in/longhoangphi225/"
+      url: "https://github.com/longhp1618"
     - label: "LinkedIn"
       icon: "fab fa-linkedin-in"
-      url: "https://www.linkedin.com/in/longhoangphi225/"
+      url: "https://www.linkedin.com/in/longhp1618/"
     - label: "Google scholar"
       icon: "ai ai-google-scholar ai-1x"  # -square
       url: "https://scholar.google.com/citations?user=3Dfc1z8AAAAJ&hl=en&authuser=1"
