@@ -19,8 +19,8 @@ author_profile: true
 
 ---
 
-
 <p align="center">
+  <img src="assets/publications/CPFL/Graphical-Abstract-final.jpg" width="550" />
 </p>
 <b>A Framework for Controllable Pareto Front Learning with Completed Scalarization Functions and its Applications</b>
 <br>Neural Networks, 2023<br>
