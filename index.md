@@ -9,7 +9,7 @@ header:
 ---
 
 ## About me
-I am a researcher having three years of research experience in Machine Learning, Trustworhty AI, and Optimization. I got the <a href="https://aisingapore.org/research/phd-fellowship-programme/" style="text-decoration:none">AISG PhD Fellowship</a> granted by AI Singapore to pursue his PhD journey at Singapore University of Technology and Design under the supervision of the Associate Professor <a href="https://istd.sutd.edu.sg/people/faculty/lu-wei/" style="text-decoration:none">Lu Wei</a> since Sep 2024. More details can be found in my <a href="/assets/images/CV_HoangPhiLong.pdf" style="text-decoration:none">CV</a> (updated Aug 2024)
+I am a researcher with three years of experience in Machine Learning, trustworthy AI, and Optimization. I got the  <a href="https://aisingapore.org/research/phd-fellowship-programme/" style="text-decoration:none">AISG PhD Fellowship</a> granted by AI Singapore to pursue my PhD journey at the Singapore University of Technology and Design under the supervision of Associate Professor <a href="https://istd.sutd.edu.sg/people/faculty/lu-wei/" style="text-decoration:none">Lu Wei</a> since Sep 2024. More details can be found in my <a href="/assets/images/CV_HoangPhiLong.pdf" style="text-decoration:none">CV</a> (updated Aug 2024)
 
 
 ### News
