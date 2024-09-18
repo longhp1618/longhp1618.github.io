@@ -3,8 +3,8 @@ main:
     url: /publications/
   - title: "News"
     url: /news/
-  # - title: "Blog"
-  #   url: /blog/
+  - title: "Blog"
+    url: /blog/
   # - title: "Tutor"
   #   url: /tutor/
   - title: "About"
