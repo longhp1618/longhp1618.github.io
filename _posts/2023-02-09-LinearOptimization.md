@@ -63,7 +63,7 @@ $$
 <img src="/assets/blogs/LinearOptimization/1-LinearAlgebra/VectorProjection.png" style="width: 500px" class="centered-image">
 <p class="caption">An example of Vector Projection.</p>
 
-<b>Note</b>: The length of the projection is $$\frac{\langle u, v \rangle}{\|v\|^2}$$
+Note: The length of the projection is $$\frac{\langle u, v \rangle}{\|v\|^2}$$
 
 <b>Angle between two vectors:</b> the angle between $$x, y \in \mathbb{R}^n$$ is defined as
 
