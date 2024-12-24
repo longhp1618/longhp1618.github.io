@@ -5,6 +5,17 @@ permalink: /publications/
 author_profile: true
 ---
 
+<p align="center">
+  <img src="/assets/publications/SVH/SVH.png" width="550" />
+</p>
+
+<b>Improving Pareto Set Learning for Expensive Multi-objective Optimization via Stein Variational Hypernetworks</b>
+<br>AAAI, 2025<br>
+<span style="font-size: 18px"> Minh-Duc Nguyen </span>, <span style="font-size: 18px"> Mai Phuong Dinh </span>, <a href="https://quanghuy0497.github.io" style="font-size:18px; text-decoration:none">Huy Q. Nguyen</a>, <a href="http://longhp1618.github.io/" style="font-size:18px; text-decoration:none">  <b> Long P. Hoang </b> </a>, <a href="https://andrew-dungle.github.io/" style="font-size:18px; text-decoration:none">Dung D. Le</a>
+<br>
+<a href="https://arxiv.org/pdf/2412.17312" style="font-size:18px; text-decoration:none">[paper]</a>
+<a href="https://github.com/nguyenduc810/SVH-PSL" style="font-size:18px; text-decoration:none">[code]</a>
+
 
 <p align="center">
   <img src="/assets/publications/MSH/MSH.png" width="550" />
