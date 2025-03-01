@@ -1,11 +1,11 @@
 main:
   - title: "Publications"
     url: /publications/
-  - title: "News"
-    url: /news/
-  - title: "Blog"
-    url: /blog/
+  - title: "CV"
+    url: /assets/images/CV_HoangPhiLong.pdf
+  # - title: "Blog"
+  #   url: /blog/
   # - title: "Tutor"
   #   url: /tutor/
-  - title: "About"
-    url: /about/
+  # - title: "About"
+  #   url: /about/
