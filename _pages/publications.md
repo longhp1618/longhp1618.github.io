@@ -22,7 +22,7 @@ author_profile: true
 </p>
 
 <b>Improving Pareto Front Learning via Multi-Sample Hypernetworks</b>
-<br>AAAI, 2023<br>
+<br>AAAI, 2023 (Oral)<br>
 <a href="http://longhp1618.github.io/" style="font-size:18px; text-decoration:none">  <b> Long P. Hoang </b> </a>, <a href="https://andrew-dungle.github.io/" style="font-size:18px; text-decoration:none">Dung D. Le</a>, <a href="https://scholar.google.com/citations?user=65LF4RQAAAAJ&hl=vi" style="font-size:18px; text-decoration:none">Thang N. Tran</a>, <a href="https://scholar.google.com/citations?user=d_WTDGoAAAAJ&hl=en&authuser=1" style="font-size:18px; text-decoration:none">Tuan A. Tran</a>
 <br>
 <a href="https://arxiv.org/abs/2212.01130" style="font-size:18px; text-decoration:none">[paper]</a>

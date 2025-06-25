@@ -24,10 +24,10 @@ header:
 
 <span style="font-size:18px;">[Improving Pareto Front Learning via Multi-Sample Hypernetwork](https://arxiv.org/abs/2212.01130)</span><br>
 <span style="font-size:17px;"> Long P. Hoang, Dung D. Le, Tuan A. Tran, Thang N. Tran </span><br>
-<span style="font-size:18px;"> _AAAI Conference on Artificial Intelligence, AAAI, 2023_.</span><br>
+<span style="font-size:18px;"> _AAAI Conference on Artificial Intelligence, AAAI, 2023 (Oral)_.</span><br>
 <!-- --- -->
 
 <span style="font-size:18px;">[Multi Deep Learning Model for Building Footprint Extraction from High Resolution Remote Sensing Image](https://link.springer.com/chapter/10.1007/978-981-19-3394-3_29)</span><br>
 <span style="font-size:17px;"> Long P. Hoang, Dung D. Le, Tuan A. Tran, Thang N. Tran </span><br>
-<span style="font-size:18px;"> _AAAI Conference on Artificial Intelligence, AAAI, 2023_.</span><br>
+<span style="font-size:18px;"> _AAAI Conference on Artificial Intelligence, AAAI, 2023 (Oral)_.</span><br>
 <!-- --- -->

@@ -9,7 +9,7 @@ header:
 ---
 
 ## About me
-I am a researcher with three years of experience in Machine Learning, Trustworthy & Explainable AI, and Optimization. I got the  <a href="https://aisingapore.org/research/phd-fellowship-programme/" style="text-decoration:none">AISG PhD Fellowship</a> granted by AI Singapore to pursue my PhD journey at the Singapore University of Technology and Design under the supervision of Professor <a href="https://www.sutd.edu.sg/profile/lu-wei" style="text-decoration:none">Wei Lu</a> since Sep 2024. More details can be found in my <a href="/assets/images/CV_HoangPhiLong.pdf" style="text-decoration:none">CV</a> (updated Mar 2025).
+I am a researcher with three years of experience in Machine Learning, Trustworthy & Explainable AI, and Optimization. I got the  <a href="https://aisingapore.org/research/phd-fellowship-programme/" style="text-decoration:none">AISG PhD Fellowship</a> granted by AI Singapore to pursue my PhD journey at the Singapore University of Technology and Design under the supervision of Professor <a href="https://www.sutd.edu.sg/profile/lu-wei" style="text-decoration:none">Wei Lu</a> since Sep 2024. More details can be found in my <a href="/assets/images/CV_HoangPhiLong.pdf" style="text-decoration:none">CV</a> (updated Jun 2025).
 
 
 ### News
@@ -27,7 +27,7 @@ I am a researcher with three years of experience in Machine Learning, Trustworth
 
 <a href="https://arxiv.org/abs/2212.01130" style="artext-decoration:none">Improving Pareto Front Learning via Multi-Sample Hypernetworks</a><br>
 <span style="font-size:17px;"> <b> Long P. Hoang </b>, Dung D. Le, Tuan A. Tran, Thang N. Tran </span><br>
-<span style="font-size:18px;"> _AAAI Conference on Artificial Intelligence, AAAI, 2023_.</span><br>
+<span style="font-size:18px;"> _AAAI Conference on Artificial Intelligence, AAAI, 2023 (Oral)_.</span><br>
 <!-- --- -->
 
 <a href="https://arxiv.org/abs/2302.12487" style="artext-decoration:none">A Framework for Controllable Pareto Front Learning with Completed Scalarization Functions and its Applications</a><br>
