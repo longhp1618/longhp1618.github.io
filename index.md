@@ -9,14 +9,14 @@ header:
 ---
 
 ## About me
-I am a researcher with three years of experience in Machine Learning, Trustworthy & Explainable AI, and Optimization. I got the  <a href="https://aisingapore.org/research/phd-fellowship-programme/" style="text-decoration:none">AISG PhD Fellowship</a> granted by AI Singapore to pursue my PhD journey at the Singapore University of Technology and Design under the supervision of Professor <a href="https://www.sutd.edu.sg/profile/lu-wei" style="text-decoration:none">Wei Lu</a> since Sep 2024. More details can be found in my <a href="/assets/images/CV_HoangPhiLong.pdf" style="text-decoration:none">CV</a> (updated Jun 2025).
+I am a researcher with three years of experience in Machine Learning, Trustworthy & Explainable AI, and Optimization. I got the  <a href="https://aisingapore.org/research/phd-fellowship-programme/" style="text-decoration:none">AISG PhD Fellowship</a> granted by AI Singapore to pursue my PhD journey at the Singapore University of Technology and Design under the co-supervision of Professor <a href="https://www.sutd.edu.sg/profile/lu-wei" style="text-decoration:none">Wei Lu</a> and Assistant Professor <a href="https://isakzhang.github.io/index.html" style="text-decoration:none">Wenxuan Zhang</a>. More details can be found in my <a href="/assets/images/CV_HoangPhiLong.pdf" style="text-decoration:none">CV</a> (updated Jul 2025).
 
 
 ### News
-- <a href="https://arxiv.org/abs/2412.17312" style="text-decoration:none">Improving Pareto Set Learning for Expensive Multi-objective Optimization via Stein Variational Hypernetworks</a> has been accepted to AAAI-25
-- Honored to be offered the <a href="https://aisingapore.org/research/phd-fellowship-programme/" style="text-decoration:none">AISG PhD Fellowship</a> granted by AI Singapore for pursuing the PhD programme at Singapore University of Technology and Design (SUTD)
-- <a href="https://arxiv.org/abs/2302.12487" style="text-decoration:none">A Framework for Controllable Pareto Front Learning with Completed Scalarization Functions and its Applications</a> has been accepted to the journal Neural Networks
-- <a href="https://arxiv.org/abs/2212.01130" style="text-decoration:none">Improving Pareto Front Learning via Multi-Sample Hypernetworks</a> has been accepted to AAAI-23
+- <a href="https://arxiv.org/abs/2412.17312" style="text-decoration:none">Improving Pareto Set Learning for Expensive Multi-objective Optimization via Stein Variational Hypernetworks</a> has been accepted to AAAI-25.
+- Honored to be offered the <a href="https://aisingapore.org/research/phd-fellowship-programme/" style="text-decoration:none">AISG PhD Fellowship</a> granted by AI Singapore for pursuing the PhD programme at Singapore University of Technology and Design (SUTD).
+- <a href="https://arxiv.org/abs/2302.12487" style="text-decoration:none">A Framework for Controllable Pareto Front Learning with Completed Scalarization Functions and its Applications</a> has been accepted to the journal Neural Networks.
+- <a href="https://arxiv.org/abs/2212.01130" style="text-decoration:none">Improving Pareto Front Learning via Multi-Sample Hypernetworks</a> has been accepted to AAAI-23 (Oral).
 
 ### Publications
 
