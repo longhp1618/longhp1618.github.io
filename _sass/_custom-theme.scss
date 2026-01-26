@@ -1,0 +1,559 @@
+/* ==========================================================================
+   CLEAN MINIMAL THEME - Long P. Hoang
+   A simple, elegant academic website
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Clean Color Palette
+   -------------------------------------------------------------------------- */
+$primary: #2563eb;           // Clean blue
+$primary-dark: #1d4ed8;
+$text-dark: #111827;
+$text-body: #374151;
+$text-muted: #6b7280;
+$bg-white: #ffffff;
+$bg-light: #f9fafb;
+$border: #e5e7eb;
+
+/* --------------------------------------------------------------------------
+   Typography
+   -------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+$font-main: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+/* --------------------------------------------------------------------------
+   Base
+   -------------------------------------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-main;
+  font-size: 16px;
+  line-height: 1.7;
+  color: $text-body;
+  background: $bg-white;
+}
+
+/* --------------------------------------------------------------------------
+   Navigation - Simple & Clean
+   -------------------------------------------------------------------------- */
+.masthead {
+  background: $bg-white;
+  border-bottom: 1px solid $border;
+  box-shadow: none;
+}
+
+.masthead__inner-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em 1.5em;
+}
+
+.greedy-nav {
+  background: transparent;
+  
+  .site-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: $text-dark;
+    
+    &:hover {
+      color: $primary;
+      text-decoration: none;
+    }
+  }
+  
+  .visible-links a {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: $text-body;
+    padding: 0.5em 1em;
+    
+    &:hover {
+      color: $primary;
+    }
+    
+    &::before {
+      display: none;
+    }
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Page Hero - Simplified
+   -------------------------------------------------------------------------- */
+.page__hero--overlay {
+  padding: 4em 0;
+  min-height: auto;
+  
+  .page__title {
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+  
+  .page__lead {
+    font-size: 1.1em;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Author Profile - Clean Sidebar
+   -------------------------------------------------------------------------- */
+.sidebar {
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+.author-card,
+.h-card {
+  text-align: center;
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+.author__avatar {
+  display: block;
+  text-align: center;
+  margin: 0 auto 1em auto;
+  width: 100%;
+  opacity: 1 !important;
+  filter: none !important;
+  
+  a {
+    display: inline-block;
+    opacity: 1 !important;
+    filter: none !important;
+  }
+  
+  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: none;
+    display: block;
+    margin: 0 auto;
+    filter: none !important;
+    opacity: 1 !important;
+  }
+}
+
+.author__content {
+  text-align: center;
+  
+  .author__name {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: $text-dark;
+    margin-bottom: 0.3em;
+    text-align: center;
+    
+    a {
+      color: inherit;
+      &:hover { color: $primary; }
+    }
+  }
+  
+  .author__bio {
+    font-size: 0.95em;
+    color: $text-muted;
+    text-align: center;
+  }
+}
+
+.author__urls-wrapper {
+  button.btn--inverse {
+    display: none;
+  }
+  
+  .author__urls {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    position: static;
+    padding: 0;
+    
+    &::before { display: none; }
+    
+    li {
+      display: inline-block;
+      
+      a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.3em;
+        padding: 0.4em 0.8em;
+        font-size: 0.85em;
+        color: $text-muted;
+        
+        &:hover {
+          color: $primary;
+        }
+        
+        i { color: inherit; }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Main Content
+   -------------------------------------------------------------------------- */
+#main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em 1.5em;
+}
+
+.page__content {
+  h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: $text-dark;
+    margin-top: 2em;
+    margin-bottom: 0.8em;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid $border;
+  }
+  
+  h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: $text-dark;
+    margin-top: 1.5em;
+  }
+  
+  p {
+    margin-bottom: 1.2em;
+  }
+  
+  a {
+    color: $primary;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  ul {
+    padding-left: 1.5em;
+    
+    li {
+      margin-bottom: 0.8em;
+      padding-left: 0;
+      
+      &::before { display: none; }
+    }
+  }
+  
+  ul li {
+    list-style: disc;
+    background: none;
+    border: none;
+    padding: 0;
+    
+    &:hover {
+      transform: none;
+      background: none;
+    }
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Publication Items - Simple Cards
+   -------------------------------------------------------------------------- */
+.publication-item {
+  padding: 1.2em 0;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid $border;
+  background: none;
+  border-left: none;
+  border-radius: 0;
+  box-shadow: none;
+  
+  &:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  
+  &:last-child {
+    border-bottom: none;
+  }
+  
+  h4 {
+    font-size: 1.05em;
+    font-weight: 600;
+    margin: 0 0 0.3em 0;
+    
+    a {
+      color: $primary;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  .authors {
+    font-size: 0.9em;
+    color: $text-body;
+    margin: 0 0 0.2em 0;
+  }
+  
+  .venue {
+    font-size: 0.85em;
+    color: $text-muted;
+    margin: 0;
+  }
+  
+  .badge {
+    display: inline-block;
+    background: $primary;
+    color: white;
+    font-size: 0.7em;
+    font-weight: 600;
+    padding: 0.15em 0.5em;
+    border-radius: 3px;
+    margin-left: 0.3em;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Publications Page
+   -------------------------------------------------------------------------- */
+.pub-entry {
+  display: flex;
+  gap: 1.5em;
+  padding: 1.5em 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid $border;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  
+  &:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  
+  &:last-of-type {
+    border-bottom: none;
+  }
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+
+.pub-image {
+  flex: 0 0 300px;
+  
+  img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: none;
+  }
+  
+  @media (max-width: 768px) {
+    flex: none;
+  }
+}
+
+.pub-entry:hover .pub-image img {
+  transform: none;
+}
+
+.pub-content {
+  flex: 1;
+  
+  h3 {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: $text-dark;
+    margin: 0 0 0.4em 0;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+.pub-venue {
+  font-size: 0.9em;
+  color: $text-muted;
+  margin: 0 0 0.3em 0 !important;
+  
+  strong {
+    color: $primary;
+  }
+}
+
+.pub-badge {
+  display: inline-block;
+  background: $primary;
+  color: white;
+  font-size: 0.65em;
+  font-weight: 600;
+  padding: 0.2em 0.5em;
+  border-radius: 3px;
+  margin-left: 0.3em;
+}
+
+.pub-authors {
+  font-size: 0.9em;
+  color: $text-body;
+  margin: 0 0 0.8em 0 !important;
+  
+  a {
+    color: $text-body;
+    &:hover { color: $primary; }
+  }
+}
+
+.pub-links {
+  display: flex;
+  gap: 0.5em;
+  margin-top: 0.5em;
+}
+
+.pub-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  padding: 0.4em 0.8em;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: $primary;
+  background: none;
+  border: 1px solid $primary;
+  border-radius: 4px;
+  
+  &:hover {
+    background: $primary;
+    color: white;
+  }
+}
+
+.pub-preprint {
+  border-left: 3px solid $text-muted;
+  padding-left: 1em;
+}
+
+/* --------------------------------------------------------------------------
+   Buttons
+   -------------------------------------------------------------------------- */
+.btn--primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.6em 1.2em;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: white !important;
+  background: $primary !important;
+  border-radius: 4px;
+  border: none;
+  text-decoration: none !important;
+  
+  i {
+    color: white !important;
+  }
+  
+  &:hover {
+    background: $primary-dark !important;
+    color: white !important;
+    
+    i {
+      color: white !important;
+    }
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Footer - Simple
+   -------------------------------------------------------------------------- */
+.page__footer {
+  background: $bg-light;
+  border-top: 1px solid $border;
+  margin-top: 3em;
+  
+  footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em 1.5em;
+  }
+  
+  .page__footer-follow {
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      
+      li a {
+        color: $text-muted;
+        padding: 0.5em;
+        
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+  
+  .page__footer-copyright {
+    text-align: center;
+    color: $text-muted;
+    font-size: 0.85em;
+    margin-top: 1em;
+  }
+}
+
+.footer-tagline {
+  text-align: center;
+  margin-bottom: 1em;
+  
+  p {
+    font-size: 0.95em;
+    color: $text-muted;
+    margin: 0;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Remove all animations
+   -------------------------------------------------------------------------- */
+* {
+  animation: none !important;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease !important;
+}
+
+/* Remove gradient backgrounds */
+body::before,
+body::after {
+  display: none;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .masthead__inner-wrap {
+    padding: 0.8em 1em;
+  }
+  
+  #main {
+    padding: 1.5em 1em;
+  }
+  
+  .author__avatar img {
+    width: 120px;
+    height: 120px;
+  }
+}
