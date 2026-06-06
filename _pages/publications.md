@@ -1,5 +1,5 @@
 ---
-title: "Publications"
+title: ""
 layout: single
 permalink: /publications/
 author_profile: true
@@ -17,6 +17,7 @@ author_profile: true
     <p class="pub-authors"><strong>Long P. Hoang</strong>, Wenxuan Zhang, Wei Lu</p>
     <div class="pub-links">
       <a href="https://openreview.net/forum?id=n9mXlqD2SJ" class="pub-btn"><i class="fas fa-file-alt"></i> Paper</a>
+      <a href="https://github.com/iNLP-Lab/DDCF" class="pub-btn"><i class="fab fa-github"></i> Code</a>
       <a href="/assets/publications/DDCF/DDCF_Poster.jpg" class="pub-btn"><i class="fas fa-image"></i> Poster</a>
     </div>
   </div>
@@ -89,13 +90,30 @@ author_profile: true
 
 ## Preprints
 
-<div class="pub-entry pub-preprint">
+<div class="pub-entry">
+  <div class="pub-image">
+    <img src="/assets/publications/SafetyParadox/graphical_abstract.jpg" alt="SafetyParadox">
+  </div>
   <div class="pub-content">
-    <h3>Controllable Expensive Multi-objective Optimization with Warm-starting Gaussian Processes</h3>
-    <p class="pub-venue"><strong>arXiv, 2023</strong></p>
-    <p class="pub-authors"><a href="https://quanghuy0497.github.io">Huy Q. Nguyen*</a>, <strong>Long P. Hoang*</strong>, Hoang V. Vu, <a href="https://andrew-dungle.github.io/">Dung D. Le</a></p>
+    <h3>Safety Paradox: How Enhanced Safety Awareness Leaves LLMs Vulnerable to Posterior Attack</h3>
+    <p class="pub-venue"><strong>arXiv, 2026</strong></p>
+    <p class="pub-authors"><strong>Long P. Hoang*</strong>, Hai V. Le*, Shaoyang Xu, Wei Lu, Wenxuan Zhang</p>
     <div class="pub-links">
-      <a href="https://arxiv.org/abs/2311.15297" class="pub-btn"><i class="fas fa-file-alt"></i> Paper</a>
+      <a href="https://arxiv.org/pdf/2606.05614" class="pub-btn"><i class="fas fa-file-alt"></i> Paper</a> <a href="https://github.com/iNLP-Lab/Safety-Paradox" class="pub-btn"><i class="fab fa-github"></i> Code</a>
+    </div>
+  </div>
+</div>
+
+<div class="pub-entry">
+  <div class="pub-image">
+    <img src="/assets/publications/BK-MOO/graphical_abstract.jpg" alt="BK-MOO">
+  </div>
+  <div class="pub-content">
+    <h3>Multilingual Fine-Tuning via Localized Gradient Conflict Resolution</h3>
+    <p class="pub-venue"><strong>arXiv, 2026</strong></p>
+    <p class="pub-authors"><strong>Long P. Hoang</strong>, Yiran Zhao, Wei Lu, Wenxuan Zhang</p>
+    <div class="pub-links">
+      <a href="https://arxiv.org/pdf/2606.05613" class="pub-btn"><i class="fas fa-file-alt"></i> Paper</a> <a href="https://github.com/iNLP-Lab/BK-MOO" class="pub-btn"><i class="fab fa-github"></i> Code</a>
     </div>
   </div>
 </div>

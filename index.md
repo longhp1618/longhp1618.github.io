@@ -10,7 +10,7 @@ header:
 
 ## About Me
 
-I am a researcher with three years of experience in **Machine Learning**, **Trustworthy & Explainable AI**, and **Optimization**. I received the [AISG PhD Fellowship](https://aisingapore.org/research/phd-fellowship-programme/) granted by AI Singapore to pursue my PhD journey at the Singapore University of Technology and Design under the co-supervision of Assistant Professor [Wenxuan Zhang](https://isakzhang.github.io/index.html) and Professor [Wei Lu](https://www.sutd.edu.sg/profile/lu-wei).
+I am a researcher in **Machine Learning**, **Trustworthy & Explainable AI**, and **Optimization**. I received the [AISG PhD Fellowship](https://aisingapore.org/research/phd-fellowship-programme/) granted by AI Singapore to pursue my PhD journey at the Singapore University of Technology and Design (SUTD) under the co-supervision of Assistant Professor [Wenxuan Zhang](https://isakzhang.github.io/index.html) and Professor [Wei Lu](https://www.sutd.edu.sg/profile/lu-wei).
 
 <a href="/assets/images/CV_HoangPhiLong.pdf" class="btn btn--primary" target="_blank"><i class="fas fa-file-pdf"></i> My CV</a>
 
@@ -24,7 +24,7 @@ I am a researcher with three years of experience in **Machine Learning**, **Trus
 - **[2023]** [Controllable Pareto Front Learning Framework](https://arxiv.org/abs/2302.12487) accepted to **Neural Networks**.
 - **[2023]** [Multi-Sample Hypernetworks](https://arxiv.org/abs/2212.01130) accepted to **AAAI 2023** (Oral Presentation).
 
----
+<!-- ---
 
 ## Selected Publications
 
@@ -66,4 +66,4 @@ I am a researcher with three years of experience in **Machine Learning**, **Trus
 <h4><a href="https://arxiv.org/abs/2311.15297">Controllable Expensive Multi-objective Optimization with Warm-starting Gaussian Processes</a></h4>
 <p class="authors">Huy Q. Nguyen*, <strong>Long P. Hoang*</strong>, Hoang V. Vu, Dung D. Le</p>
 <p class="venue"><em>arXiv preprint, 2023</em></p>
-</div>
+</div> -->

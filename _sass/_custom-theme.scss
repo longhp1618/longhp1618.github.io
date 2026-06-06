@@ -56,14 +56,7 @@ body {
   background: transparent;
   
   .site-title {
-    font-size: 1.5em;
-    font-weight: 700;
-    color: $text-dark;
-    
-    &:hover {
-      color: $primary;
-      text-decoration: none;
-    }
+    display: none;
   }
   
   .visible-links a {
@@ -71,6 +64,7 @@ body {
     font-weight: 600;
     color: $text-body;
     padding: 0.5em 1em;
+    white-space: nowrap;
     
     &:hover {
       color: $primary;
@@ -109,39 +103,61 @@ body {
 
 .author-card,
 .h-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   opacity: 1 !important;
   filter: none !important;
+  width: 100%;
 }
 
 .author__avatar {
-  display: block;
+  display: block !important;
   text-align: center;
   margin: 0 auto 1em auto;
-  width: 100%;
+  width: auto !important;
+  height: auto !important;
   opacity: 1 !important;
   filter: none !important;
   
   a {
     display: inline-block;
+    width: 130px;
+    height: 170px;
+    border-radius: 50%;
+    overflow: hidden;
     opacity: 1 !important;
     filter: none !important;
   }
   
   img {
-    width: 150px;
-    height: 150px;
+    width: 130px !important;
+    height: 170px !important;
+    max-width: 130px !important;
     border-radius: 50%;
     border: none;
     box-shadow: none;
     display: block;
     margin: 0 auto;
+    object-fit: cover;
+    object-position: center top;
     filter: none !important;
     opacity: 1 !important;
   }
 }
 
+/* Override sidebar rule that stretches all images to 100% width */
+.sidebar .author__avatar img {
+  width: 130px !important;
+  height: 170px !important;
+  max-width: 130px !important;
+}
+
 .author__content {
+  display: block !important;
+  width: 100% !important;
+  padding: 0 !important;
   text-align: center;
   
   .author__name {
@@ -165,6 +181,11 @@ body {
 }
 
 .author__urls-wrapper {
+  display: block !important;
+  width: 100% !important;
+  position: static !important;
+  cursor: default;
+  
   button.btn--inverse {
     display: none;
   }
@@ -179,11 +200,13 @@ body {
     border: none;
     position: static;
     padding: 0;
+    width: 100%;
     
     &::before { display: none; }
     
     li {
       display: inline-block;
+      width: auto;
       
       a {
         display: inline-flex;
@@ -192,6 +215,7 @@ body {
         padding: 0.4em 0.8em;
         font-size: 0.85em;
         color: $text-muted;
+        white-space: nowrap;
         
         &:hover {
           color: $primary;
@@ -441,11 +465,6 @@ body {
   }
 }
 
-.pub-preprint {
-  border-left: 3px solid $text-muted;
-  padding-left: 1em;
-}
-
 /* --------------------------------------------------------------------------
    Buttons
    -------------------------------------------------------------------------- */
@@ -541,19 +560,147 @@ body::after {
 }
 
 /* --------------------------------------------------------------------------
-   Responsive
+   Responsive - Mobile
    -------------------------------------------------------------------------- */
+@media (max-width: 1023px) {
+  .sidebar {
+    float: none;
+    width: 100% !important;
+    max-width: 100%;
+    margin: 0 auto 1.5em auto;
+    padding: 0 1em;
+    opacity: 1 !important;
+  }
+
+  .page {
+    float: none;
+    width: 100% !important;
+    padding-right: 0 !important;
+  }
+
+  .author-card,
+  .h-card {
+    padding: 1em 0;
+  }
+
+  .author__urls-wrapper .author__urls li {
+    flex: 0 0 auto;
+  }
+}
+
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .masthead__inner-wrap {
-    padding: 0.8em 1em;
+    padding: 0.6em 0.8em;
   }
-  
+
+  .greedy-nav {
+    min-height: auto;
+
+    .visible-links {
+      justify-content: flex-end;
+      gap: 0;
+
+      a {
+        font-size: 0.95em;
+        padding: 0.4em 0.6em;
+        margin: 0;
+      }
+    }
+
+    .greedy-nav__toggle {
+      margin-left: 0.25em;
+    }
+  }
+
+  .page__hero--overlay {
+    padding: 2.5em 1em;
+
+    .page__title {
+      font-size: 1.6em;
+      line-height: 1.2;
+    }
+
+    .page__lead {
+      font-size: 0.95em;
+    }
+  }
+
   #main {
-    padding: 1.5em 1em;
+    padding: 1em 0.8em;
   }
-  
-  .author__avatar img {
-    width: 120px;
-    height: 120px;
+
+  .page .page__inner-wrap {
+    padding: 0;
+  }
+
+  .author__avatar a {
+    width: 100px;
+    height: 130px;
+  }
+
+  .author__avatar img,
+  .sidebar .author__avatar img {
+    width: 100px !important;
+    height: 130px !important;
+    max-width: 100px !important;
+  }
+
+  .author__content .author__name {
+    font-size: 1.15em;
+  }
+
+  .author__urls-wrapper .author__urls {
+    gap: 0.35em;
+
+    li a {
+      font-size: 0.8em;
+      padding: 0.35em 0.6em;
+    }
+  }
+
+  .page__content {
+    h2 {
+      font-size: 1.25em;
+      margin-top: 1.5em;
+    }
+
+    h3 {
+      font-size: 1.05em;
+    }
+  }
+
+  .publication-item h4 {
+    font-size: 1em;
+  }
+
+  .pub-entry {
+    padding: 1.2em 0;
+  }
+
+  .pub-image {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .pub-content h3 {
+    font-size: 1em;
+  }
+
+  .pub-links {
+    flex-wrap: wrap;
+  }
+
+  .btn--primary {
+    font-size: 0.85em;
+    padding: 0.55em 1em;
+  }
+
+  .page__footer footer {
+    padding: 1.5em 1em;
   }
 }
