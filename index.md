@@ -18,6 +18,8 @@ I am a researcher in **Machine Learning**, **Trustworthy & Explainable AI**, and
 
 ## Recent News
 
+- **[Aug 2026]** Two papers accepted to **EMNLP 2026**: [Safety Paradox](https://arxiv.org/abs/2606.05614) (Main) and [System Diversity](https://arxiv.org/abs/2606.05985) (Findings).
+- **[Jul 2026]** [MoltNet: Understanding Social Behavior of AI Agents in the Agent-Native MoltBook](https://arxiv.org/abs/2602.13458) accepted to **COLM 2026**.
 - **[Jan 2026]** [Difficulty–Diversity Collaborative Filtering for Data-Efficient LLM Fine-Tuning](https://openreview.net/forum?id=n9mXlqD2SJ) accepted to **ICLR 2026**.
 - **[Dec 2024]** [Improving Pareto Set Learning via Stein Variational Hypernetworks](https://arxiv.org/abs/2412.17312) accepted to **AAAI 2025**.
 - **[2024]** Honored to receive the **AISG PhD Fellowship** from AI Singapore.

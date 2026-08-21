@@ -9,6 +9,51 @@ author_profile: true
 
 <div class="pub-entry">
   <div class="pub-image">
+    <img src="/assets/publications/SafetyParadox/graphical_abstract.jpg" alt="SafetyParadox">
+  </div>
+  <div class="pub-content">
+    <h3>Safety Paradox: How Enhanced Safety Awareness Leaves LLMs Vulnerable to Posterior Attack</h3>
+    <p class="pub-venue"><strong>EMNLP 2026</strong></p>
+    <p class="pub-authors"><strong>Long P. Hoang*</strong>, Hai V. Le*, Shaoyang Xu, Wei Lu, Wenxuan Zhang</p>
+    <div class="pub-links">
+      <a href="https://arxiv.org/pdf/2606.05614" class="pub-btn"><i class="fas fa-file-alt"></i> Paper</a>
+      <a href="https://github.com/iNLP-Lab/Safety-Paradox" class="pub-btn"><i class="fab fa-github"></i> Code</a>
+    </div>
+  </div>
+</div>
+
+<div class="pub-entry">
+  <div class="pub-image">
+    <img src="/assets/publications/MultiAgent-Diversity/graphical_abstract.jpg" alt="MultiAgent-Diversity">
+  </div>
+  <div class="pub-content">
+    <h3>Beyond Alignment: Value Diversity as a Collective Property in Multicultural Agent Systems</h3>
+    <p class="pub-venue"><strong>EMNLP 2026 Findings</strong></p>
+    <p class="pub-authors">Shaoyang Xu, Jingshen Zhang, <strong>Long P. Hoang</strong>, Jinyuan Li, Wenxuan Zhang</p>
+    <div class="pub-links">
+      <a href="https://arxiv.org/pdf/2606.05985" class="pub-btn"><i class="fas fa-file-alt"></i> Paper</a>
+      <a href="https://github.com/iNLP-Lab/MultiAgent-Diversity" class="pub-btn"><i class="fab fa-github"></i> Code</a>
+    </div>
+  </div>
+</div>
+
+<div class="pub-entry">
+  <div class="pub-image">
+    <img src="/assets/publications/MoltNet/graphical_abstract.jpg" alt="MoltNet">
+  </div>
+  <div class="pub-content">
+    <h3>MoltNet: Understanding Social Behavior of AI Agents in the Agent-Native MoltBook</h3>
+    <p class="pub-venue"><strong>COLM 2026</strong></p>
+    <p class="pub-authors">Yi Feng*, Chen Huang*, Zhibo Man*, Ryner Tan*, <strong>Long P. Hoang</strong>, Shaoyang Xu, Wenxuan Zhang</p>
+    <div class="pub-links">
+      <a href="https://arxiv.org/pdf/2602.13458" class="pub-btn"><i class="fas fa-file-alt"></i> Paper</a>
+      <a href="https://github.com/iNLP-Lab/MoltNet" class="pub-btn"><i class="fab fa-github"></i> Code</a>
+    </div>
+  </div>
+</div>
+
+<div class="pub-entry">
+  <div class="pub-image">
     <img src="/assets/publications/DDCF/Graphical_Abstract.jpg" alt="DDCF">
   </div>
   <div class="pub-content">
@@ -89,20 +134,6 @@ author_profile: true
 ---
 
 ## Preprints
-
-<div class="pub-entry">
-  <div class="pub-image">
-    <img src="/assets/publications/SafetyParadox/graphical_abstract.jpg" alt="SafetyParadox">
-  </div>
-  <div class="pub-content">
-    <h3>Safety Paradox: How Enhanced Safety Awareness Leaves LLMs Vulnerable to Posterior Attack</h3>
-    <p class="pub-venue"><strong>arXiv, 2026</strong></p>
-    <p class="pub-authors"><strong>Long P. Hoang*</strong>, Hai V. Le*, Shaoyang Xu, Wei Lu, Wenxuan Zhang</p>
-    <div class="pub-links">
-      <a href="https://arxiv.org/pdf/2606.05614" class="pub-btn"><i class="fas fa-file-alt"></i> Paper</a> <a href="https://github.com/iNLP-Lab/Safety-Paradox" class="pub-btn"><i class="fab fa-github"></i> Code</a>
-    </div>
-  </div>
-</div>
 
 <div class="pub-entry">
   <div class="pub-image">
