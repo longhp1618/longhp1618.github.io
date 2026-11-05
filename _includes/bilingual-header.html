@@ -1,0 +1,39 @@
+{% comment %}
+  Header for posts with `bilingual: true` (used by _layouts/single.html).
+  Renders the title, date and read time in English and Vietnamese plus the language switch.
+  The head script in _includes/head/custom.html decides which language is shown.
+{% endcomment %}
+{% assign title_vi = page.title_vi | default: page.title %}
+{% assign words_per_minute = page.words_per_minute | default: site.words_per_minute | default: 200 %}
+{% comment %}The page holds both languages, so halve the word count to estimate one reading.{% endcomment %}
+{% assign words = page.content | strip_html | number_of_words | divided_by: 2 %}
+{% assign minutes = words | divided_by: words_per_minute %}
+{% if minutes < 1 %}{% assign minutes = 1 %}{% endif %}
+
+<h1 id="page-title" class="page__title p-name" itemprop="headline">
+  <a href="{{ page.url | absolute_url }}" class="u-url" itemprop="url"><span class="i18n" lang="en">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span><span class="i18n" lang="vi">{{ title_vi | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span></a>
+</h1>
+
+<div class="post-bar">
+  <p class="page__meta">
+    {% if page.date %}
+    <span class="page__meta-date">
+      <i class="far fa-calendar-alt" aria-hidden="true"></i>
+      <time datetime="{{ page.date | date_to_xmlschema }}"><span class="i18n" lang="en">{{ page.date | date: "%B %-d, %Y" }}</span><span class="i18n" lang="vi">{{ page.date | date: "%-d" }} tháng {{ page.date | date: "%-m, %Y" }}</span></time>
+    </span>
+    <span class="page__meta-sep"></span>
+    {% endif %}
+    <span class="page__meta-readtime">
+      <i class="far fa-clock" aria-hidden="true"></i>
+      <span class="i18n" lang="en">{{ minutes }} minute read</span><span class="i18n" lang="vi">{{ minutes }} phút đọc</span>
+    </span>
+  </p>
+
+  <div class="lang-switch" role="group" aria-label="Language / Ngôn ngữ">
+    <i class="fas fa-language lang-switch__icon" aria-hidden="true"></i>
+    <span class="lang-switch__options">
+      <button type="button" class="lang-switch__btn" data-set-lang="en" lang="en" aria-pressed="false">English</button>
+      <button type="button" class="lang-switch__btn" data-set-lang="vi" lang="vi" aria-pressed="false">Tiếng Việt</button>
+    </span>
+  </div>
+</div>

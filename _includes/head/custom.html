@@ -8,4 +8,72 @@
 <!-- Academicons for Google Scholar -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
+{% if page.bilingual %}
+<!-- Bilingual post: pick English or Vietnamese before the page paints, then handle the switch -->
+<script>
+  (function () {
+    var LANGS = ["en", "vi"];
+    var STORAGE_KEY = "post-lang";
+    var root = document.documentElement;
+    var titles = {
+      en: {{ page.title | markdownify | strip_html | strip_newlines | strip | jsonify }},
+      vi: {{ page.title_vi | default: page.title | markdownify | strip_html | strip_newlines | strip | jsonify }}
+    };
+    /* The <title> is "<post title> - <site title>"; keep the suffix when swapping languages. */
+    var titleSuffix = document.title.indexOf(titles.en) === 0 ? document.title.slice(titles.en.length) : null;
+    var current;
+
+    function isLang(value) {
+      return LANGS.indexOf(value) !== -1;
+    }
+
+    /* Priority: ?lang= in the link, then the reader's last choice, then the browser language, then English. */
+    function initialLang() {
+      try {
+        var fromUrl = (new URLSearchParams(window.location.search).get("lang") || "").toLowerCase();
+        if (isLang(fromUrl)) return fromUrl;
+      } catch (e) {}
+      try {
+        var saved = window.localStorage.getItem(STORAGE_KEY);
+        if (isLang(saved)) return saved;
+      } catch (e) {}
+      var preferred = navigator.languages || [navigator.language || ""];
+      for (var i = 0; i < preferred.length; i++) {
+        var code = String(preferred[i]).slice(0, 2).toLowerCase();
+        if (isLang(code)) return code;
+      }
+      return {{ page.default_lang | default: "en" | jsonify }};
+    }
+
+    function apply(lang) {
+      current = lang;
+      root.setAttribute("data-post-lang", lang);
+      if (titleSuffix !== null) document.title = titles[lang] + titleSuffix;
+      var buttons = document.querySelectorAll("[data-set-lang]");
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].setAttribute("aria-pressed", buttons[i].getAttribute("data-set-lang") === lang ? "true" : "false");
+      }
+    }
+
+    apply(initialLang());
+    document.addEventListener("DOMContentLoaded", function () { apply(current); });
+
+    document.addEventListener("click", function (event) {
+      var button = event.target && event.target.closest ? event.target.closest("[data-set-lang]") : null;
+      if (!button) return;
+      var lang = button.getAttribute("data-set-lang");
+      if (!isLang(lang) || lang === current) return;
+      apply(lang);
+      try { window.localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
+      /* Reflect the choice in the address bar so a copied link opens in the same language. */
+      try {
+        var url = new URL(window.location.href);
+        url.searchParams.set("lang", lang);
+        window.history.replaceState(window.history.state, "", url.href);
+      } catch (e) {}
+    });
+  })();
+</script>
+{% endif %}
+
 <!-- end custom head snippets -->

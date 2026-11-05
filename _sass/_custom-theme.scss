@@ -25,8 +25,17 @@ $font-main: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sa
 /* --------------------------------------------------------------------------
    Base
    -------------------------------------------------------------------------- */
+// Measured height of the sticky top bar (see .masthead below)
+$masthead-height: 64px;
+$masthead-height-mobile: 58px;   // <= 768px
+
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: $masthead-height + 16px;   // keep #anchor targets clear of the sticky top bar
+
+  @media (max-width: 768px) {
+    scroll-padding-top: $masthead-height-mobile + 12px;
+  }
 }
 
 body {
@@ -41,19 +50,30 @@ body {
    Navigation - Simple & Clean
    -------------------------------------------------------------------------- */
 .masthead {
+  position: sticky;   // keep the top bar visible while scrolling
+  top: 0;
+  z-index: 30;
   background: $bg-white;
   border-bottom: 1px solid $border;
   box-shadow: none;
 }
 
+// The theme pins the sidebar 2em from the top on wide screens; start it below the top bar instead
+@media (min-width: 1024px) {
+  .sidebar.sticky {
+    top: $masthead-height + 24px;
+  }
+}
+
 .masthead__inner-wrap {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1em 1.5em;
+  padding: 0.25em 1.5em;   // slim top bar
 }
 
 .greedy-nav {
   background: transparent;
+  min-height: auto;
   
   .site-title {
     display: none;
@@ -63,7 +83,7 @@ body {
     font-size: 1.5em;
     font-weight: 600;
     color: $text-body;
-    padding: 0.5em 1em;
+    padding: 0.3em 1em;
     white-space: nowrap;
     
     &:hover {
@@ -174,9 +194,11 @@ body {
   }
   
   .author__bio {
-    font-size: 0.95em;
+    font-size: 14px;   // same size as the sidebar links below
     color: $text-muted;
     text-align: center;
+
+    p { font-size: inherit; }   // the theme shrinks this paragraph to 75%
   }
 }
 
@@ -190,30 +212,50 @@ body {
     display: none;
   }
   
+  // One item per line (location, GitHub, LinkedIn, Google Scholar), same size.
+  // Items line up on the left; the column itself stays centered under the name.
   .author__urls {
     display: flex !important;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5em;
+    flex-direction: column;
+    align-items: flex-start;
     background: transparent;
     box-shadow: none;
     border: none;
     position: static;
     padding: 0;
-    width: 100%;
-    
+    width: fit-content;
+    margin: 0.5em auto 0;
+
     &::before { display: none; }
-    
+
     li {
-      display: inline-block;
+      display: flex;
+      align-items: center;
+      gap: 0.4em;
       width: auto;
-      
+      height: 2.3em;   // same height for every row, link or not
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      line-height: 1.4;
+      color: $text-muted;
+      white-space: nowrap;
+
+      i {
+        width: 1.1em;
+        text-align: center;
+      }
+
+      .label {
+        padding-left: 0;   // the theme indents link labels 5px; line them up with "Singapore"
+      }
+
       a {
         display: inline-flex;
         align-items: center;
-        gap: 0.3em;
-        padding: 0.4em 0.8em;
-        font-size: 0.85em;
+        gap: 0.4em;
+        padding: 0;
+        font-size: inherit;
         color: $text-muted;
         white-space: nowrap;
         
@@ -496,6 +538,187 @@ body {
 }
 
 /* --------------------------------------------------------------------------
+   Bilingual posts (English / Tiếng Việt)
+   A post with `bilingual: true` wraps each language in <div lang="en|vi" markdown="1">.
+   The head script sets <html data-post-lang="en|vi">; CSS shows only that language.
+   -------------------------------------------------------------------------- */
+$post-langs: en, vi;
+
+@each $lang in $post-langs {
+  html[data-post-lang="#{$lang}"] {
+    .page__content > [lang]:not([lang|="#{$lang}"]),
+    .i18n[lang]:not([lang|="#{$lang}"]) {
+      display: none !important;
+    }
+
+    .lang-switch__btn[data-set-lang="#{$lang}"] {
+      background: $primary;
+      color: white;
+      cursor: default;
+    }
+  }
+}
+
+// Without JavaScript both languages stay visible, one after the other
+.no-js {
+  .i18n + .i18n::before {
+    content: " / ";
+  }
+
+  .page__content > [lang] + [lang] {
+    margin-top: 2.5em;
+    padding-top: 1.5em;
+    border-top: 1px solid $border;
+  }
+}
+
+.post-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75em 1.5em;
+  margin-bottom: 1.5em;
+  padding-bottom: 1.25em;
+  border-bottom: 1px solid $border;
+
+}
+
+// The theme floats .page__meta at full width (.page .page__inner-wrap .page__meta);
+// inside the post bar let it share the row with the language switch
+.page__inner-wrap .post-bar .page__meta {
+  float: none;
+  clear: none;
+  width: auto;
+  margin: 0;
+}
+
+.lang-switch {
+  display: none;   // shown once the head script has picked a language
+  align-items: center;
+  gap: 0.5em;
+  font-size: 0.85em;
+
+  html[data-post-lang] & {
+    display: inline-flex;
+  }
+}
+
+.lang-switch__icon {
+  font-size: 1.2em;
+  color: $text-muted;
+}
+
+.lang-switch__options {
+  display: inline-flex;
+  padding: 3px;
+  background: $bg-light;
+  border: 1px solid $border;
+  border-radius: 999px;
+}
+
+.lang-switch__btn {
+  margin: 0;
+  padding: 0.3em 1em;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  color: $text-muted;
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+
+  &:hover {
+    color: $primary;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $primary;
+    outline-offset: 2px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Blog index (/blog/)
+   -------------------------------------------------------------------------- */
+.post-list {
+  .post-list__item {
+    padding: 1.4em 0;
+    border-bottom: 1px solid $border;
+
+    &:first-child {
+      padding-top: 0.25em;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .post-list__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4em 0.9em;
+    margin: 0 0 0.4em;
+    font-size: 0.85em;
+    color: $text-muted;
+  }
+
+  .post-list__langs {
+    display: inline-flex;
+    gap: 0.4em;
+
+    a {
+      padding: 0.05em 0.7em;
+      font-weight: 600;
+      border: 1px solid $border;
+      border-radius: 999px;
+
+      &:hover {
+        border-color: $primary;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .post-list__title {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1.35em;
+    line-height: 1.3;
+
+    a {
+      color: $text-dark;
+
+      &:hover {
+        color: $primary;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .post-list__subtitle {
+    margin: 0.25em 0 0;
+    font-size: 1.05em;
+    color: $text-muted;
+  }
+
+  .post-list__excerpt {
+    margin: 0.6em 0 0;
+  }
+
+  @media (max-width: 768px) {
+    .post-list__title {
+      font-size: 1.2em;
+    }
+  }
+}
+
+/* --------------------------------------------------------------------------
    Footer - Simple
    -------------------------------------------------------------------------- */
 .page__footer {
@@ -512,9 +735,10 @@ body {
   .page__footer-follow {
     .social-icons {
       display: flex;
+      flex-wrap: wrap;   // don't run off the edge on narrow phones
       justify-content: center;
       gap: 1em;
-      
+
       li a {
         color: $text-muted;
         padding: 0.5em;
@@ -653,13 +877,9 @@ body::after {
     font-size: 1.15em;
   }
 
-  .author__urls-wrapper .author__urls {
-    gap: 0.35em;
-
-    li a {
-      font-size: 0.8em;
-      padding: 0.35em 0.6em;
-    }
+  .author__urls-wrapper .author__urls li,
+  .author__content .author__bio {
+    font-size: 13px;
   }
 
   .page__content {

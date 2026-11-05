@@ -55,7 +55,11 @@ $(function() {
 
   // Smooth scrolling
   var scroll = new SmoothScroll('a[href*="#"]', {
-    offset: 20,
+    // stop below the sticky top bar (.masthead)
+    offset: function() {
+      var masthead = document.querySelector(".masthead");
+      return (masthead ? masthead.offsetHeight : 0) + 20;
+    },
     speed: 400,
     speedAsDuration: true,
     durationMax: 500

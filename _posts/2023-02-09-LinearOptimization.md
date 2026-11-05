@@ -2,6 +2,7 @@
 title: "Linear Algebra Bootcamp"
 layout: single
 date: 2024-09-18
+hidden: true   # unfinished draft: kept off the Blog page (delete this line to list it)
 categories:
   - blog
 tags:

@@ -1,0 +1,30 @@
+---
+title: "Blog"
+layout: single
+permalink: /blog/
+author_profile: true
+---
+
+{% comment %}Posts with `hidden: true` in their front matter are left out of this list.{% endcomment %}
+{% assign posts = site.posts | where_exp: "post", "post.hidden != true" %}
+
+<div class="post-list">
+  {% for post in posts %}
+  <article class="post-list__item">
+    <p class="post-list__meta">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+      {% if post.bilingual %}
+      <span class="post-list__langs">
+        <a href="{{ post.url | relative_url }}?lang=en" hreflang="en" lang="en">English</a>
+        <a href="{{ post.url | relative_url }}?lang=vi" hreflang="vi" lang="vi">Tiếng Việt</a>
+      </span>
+      {% endif %}
+    </p>
+    <h2 class="post-list__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    {% if post.bilingual and post.title_vi %}<p class="post-list__subtitle" lang="vi">{{ post.title_vi }}</p>{% endif %}
+    {% if post.excerpt %}<p class="post-list__excerpt">{{ post.excerpt | markdownify | strip_html | strip }}</p>{% endif %}
+  </article>
+  {% else %}
+  <p>No posts yet.</p>
+  {% endfor %}
+</div>

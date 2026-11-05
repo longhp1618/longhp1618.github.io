@@ -5,8 +5,8 @@ main:
     url: /publications/
   - title: "CV"
     url: /assets/images/CV_HoangPhiLong.pdf
-  # - title: "Blog"
-  #   url: /blog/
+  - title: "Blog"
+    url: /blog/
   # - title: "Tutor"
   #   url: /tutor/
   # - title: "About"
